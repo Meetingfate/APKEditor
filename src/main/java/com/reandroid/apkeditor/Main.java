@@ -51,11 +51,11 @@ public class Main {
         args = Util.trimNull(args);
         if(Util.isHelp(args) || args == null){
             System.err.println(getHelp());
-            return 2;
+            return 1;
         }
         if(Util.isVersion(args)){
             System.err.println(getVersion());
-            return 2;
+            return 1;
         }
         String command = getCommand(args);
         args = Util.trimNull(args);
